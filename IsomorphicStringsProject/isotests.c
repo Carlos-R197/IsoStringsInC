@@ -23,4 +23,9 @@ spec("This program tests if given strings are isomorphic")
 	{
 		check(areIsomorphic("paper", "title") == true);
 	}
+	
+	it("Shoudl return false since notepad can't be mapped to command")
+	{
+		check(areIsomorphic("notepad", "command") == false);
+	}
 }
